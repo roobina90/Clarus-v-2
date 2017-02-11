@@ -1,15 +1,23 @@
 @import "bootstrap.less";
 
+@backgroundColor: #fff;
+
 
 html {
     font-family: "Open Sans", Arial, sans-serif;
 }
 body {
-    background: yellow;
-    .container-fluid();
+    background-color: @backgroundColor;
 }
 
-div {
-    .make-xs-column(1);
-    background: blue;
-}
+.clrs-main {
+    .container-fluid();
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    background-image: url("../images/clrs_back.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left center;
+} 
