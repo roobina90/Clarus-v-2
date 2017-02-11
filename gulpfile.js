@@ -11,3 +11,6 @@ gulp.task('less', function () {
 });
 
 gulp.task('default', ['less']);
+
+gulp.watch('style/*.less', ['default']);
+
