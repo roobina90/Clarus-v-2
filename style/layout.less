@@ -1,0 +1,58 @@
+@import "bootstrap.less";
+@import "variables.less";
+
+
+html {
+    font-family: "Open Sans", Arial, sans-serif;
+}
+body {
+    background-color: @backgroundColor;
+}
+
+.clrs-main {
+    .container-fluid();
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    background-image: url("../images/clrs_back.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left center;
+} 
+
+.clrs-header {
+    height: @headerHeight;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: @backgroundColor;
+    border-bottom: 1px solid @grayColor;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    text-transform: uppercase;
+    color: @textColor;
+    &-menu {
+        margin: 0 auto;
+        width: 1200px;
+        text-align: center;
+        &-item {
+            padding: 10px 25px 5px 25px;
+            line-height: @headerHeight;
+            vertical-align: middle;
+            &:link, &:visited {
+                color: @textColor;
+            }
+            &:hover, &:active {
+                text-decoration: none;
+                color: @accentColor;
+                border-bottom: 1px solid @accentColor;
+            }
+        }
+
+    }
+    &-logo {
+    padding: 10px 25px 5px 25px;
+    }
+}
