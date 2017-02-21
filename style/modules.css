@@ -1,5 +1,7 @@
 html {
   font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  color: #848484;
 }
 body {
   background-color: #fff;
@@ -53,6 +55,39 @@ body {
 }
 .clrs-header-logo {
   padding: 10px 25px 5px 25px;
+}
+.clrs-footer {
+  /*tymczas*/
+  margin-top: 200px;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #848484;
+}
+.clrs-footer-menu {
+  margin: 0 auto;
+  width: 1200px;
+  text-align: center;
+}
+.clrs-footer-menu-item {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  padding: 10px 25px 5px 25px;
+  line-height: 120px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.clrs-footer-menu-item:link,
+.clrs-footer-menu-item:visited {
+  color: #848484;
+}
+.clrs-footer-menu-item:hover,
+.clrs-footer-menu-item:active {
+  text-decoration: none;
+  color: #617caa;
+  border-bottom: 1px solid #617caa;
+}
+.clrs-footer-claim {
+  text-align: center;
 }
 /* colors */
 /* widths & haights */

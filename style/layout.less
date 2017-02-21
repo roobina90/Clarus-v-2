@@ -4,6 +4,8 @@
 
 html {
     font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    color: @textColor;
 }
 body {
     background-color: @backgroundColor;
@@ -55,4 +57,37 @@ body {
     &-logo {
     padding: 10px 25px 5px 25px;
     }
+}
+
+.clrs-footer {
+    /*tymczas*/
+    margin-top: 200px;
+    width: 100%;
+    background: @backgroundColor;
+    border-top: 1px solid @grayColor;
+    &-menu {
+        margin: 0 auto;
+        width: 1200px;
+        text-align: center;
+       &-item {
+            font-family: "Playfair Display";
+            font-weight: bold;
+            padding: 10px 25px 5px 25px;
+            line-height: @headerHeight;
+            text-transform: uppercase;
+            vertical-align: middle;
+            &:link, &:visited {
+                color: @textColor;
+            }
+            &:hover, &:active {
+                text-decoration: none;
+                color: @accentColor;
+                border-bottom: 1px solid @accentColor;
+            }
+        }
+    }
+    &-claim {
+        text-align: center;
+    }
+
 }
