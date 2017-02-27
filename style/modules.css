@@ -6,15 +6,17 @@ html {
 body {
   background-color: #fff;
 }
+* {
+  box-sizing: border-box;
+}
 .clrs-main {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 100px;
-  height: 100px;
+  width: 1200px;
   display: block;
-  margin: 0 auto;
+  margin: 120px auto 0 auto;
   background-image: url("../images/clrs_back.png");
   background-repeat: no-repeat;
   background-size: auto;
@@ -32,6 +34,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   color: #848484;
+  z-index: 999;
 }
 .clrs-header-menu {
   margin: 0 auto;
@@ -1051,7 +1054,9 @@ hr {
 .container-fluid:before,
 .container-fluid:after,
 .row:before,
-.row:after {
+.row:after,
+.clrs-lead:before,
+.clrs-lead:after {
   content: " ";
   display: table;
 }
@@ -1059,7 +1064,8 @@ hr {
 .clrs-main:after,
 .container:after,
 .container-fluid:after,
-.row:after {
+.row:after,
+.clrs-lead:after {
   clear: both;
 }
 .center-block {
@@ -1304,4 +1310,90 @@ hr {
   .hidden-print {
     display: none !important;
   }
+}
+* {
+  border: 1px solid red;
+}
+.clrs-button {
+  color: #617caa;
+  text-transform: uppercase;
+  border: 2px solid #617caa;
+  text-align: center;
+  display: block;
+  width: 200px;
+  padding: 7px;
+  margin: 10px auto;
+  transition: all 0.2s ease-in-out;
+  font-size: 18px;
+  font-family: "Playfair Display";
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+}
+.clrs-button:before {
+  content: " ";
+  display: table;
+}
+.clrs-button:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #617caa;
+}
+.clrs-lead {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.clrs-lead-title {
+  margin-left: 8.33333333%;
+  float: left;
+  width: 83.33333333%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: "Playfair Display";
+  text-align: center;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 78px;
+  letter-spacing: -1px;
+  color: #617caa;
+}
+@media (min-width: 992px) {
+  .clrs-lead-title {
+    margin-left: 16.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  .clrs-lead-title {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+.clrs-lead-text {
+  margin-left: 8.33333333%;
+  float: left;
+  width: 83.33333333%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+  color: #848484;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .clrs-lead-text {
+    margin-left: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .clrs-lead-text {
+    float: left;
+    width: 50%;
+  }
+}
+.clrs-lead-text .clrs-button {
+  margin-top: 50px;
 }

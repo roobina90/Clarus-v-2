@@ -2,3 +2,64 @@
 @import "variables.less";
 @import "bootstrap.less";
 
+* {
+    border: 1px solid red;
+}
+
+.clrs-button {
+    color: @accentColor;
+    text-transform: uppercase;
+    border: 2px solid @accentColor;
+    text-align: center;
+    display: block;
+    width: 200px;
+    padding: 7px;
+    margin: 10px auto;
+    transition: all 0.2s ease-in-out;
+    font-size: 18px;
+        font-family: "Playfair Display";
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 30px;
+    &:before {
+        content: " ";
+        display: table;
+    }
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+        background-color: @accentColor;
+    }
+}
+
+.clrs-lead {
+    .make-row();
+    &-title {
+        .make-xs-column-offset(1);
+        .make-xs-column(10);
+        .make-md-column-offset(2);
+        .make-md-column(8);
+        font-family: "Playfair Display";
+        text-align: center;
+        font-weight: 900;
+        font-size: 70px;
+        line-height: 78px;
+        letter-spacing: -1px;
+        color: @accentColor;
+    }
+
+    &-text {
+        .make-xs-column-offset(1);
+        .make-xs-column(10);
+        .make-md-column-offset(3);
+        .make-md-column(6);
+        font-size: 18px;
+        color: @textColor;
+        text-align: center;
+        margin-bottom: 30px;
+        
+        .clrs-button {
+            margin-top: 50px;
+        }
+    }
+}

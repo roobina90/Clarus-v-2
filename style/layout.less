@@ -11,12 +11,15 @@ body {
     background-color: @backgroundColor;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .clrs-main {
     .container-fluid();
-    width: 100px;
-    height: 100px;
+    width: 1200px;
     display: block;
-    margin: 0 auto;
+    margin: @headerHeight auto 0 auto;
     background-image: url("../images/clrs_back.png");
     background-repeat: no-repeat;
     background-size: auto;
@@ -35,6 +38,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     color: @textColor;
+    z-index: 999;
     &-menu {
         margin: 0 auto;
         width: 1200px;
