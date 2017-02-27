@@ -8,6 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style/modules.css">
+
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAn5BnID9euROFjJbKua2g_9CdoOeaUebs"></script>
+     <script src="./scripts/script.js"></script>
+
 </head>
 
 <body>
@@ -36,16 +40,53 @@
             </p>
 
         </section>
-        <div class="clrs-separator--dog1">do1</div>
+        <div class="clrs-separator">
+        <div class="clrs-separator--left"></div>
+            <img class="clrs-separator-image" src="./images/clrs_dog1.png" />
+            
+        <div class="clrs-separator--right"></div>
+        </div>
         <section class="clrs-open">
-            <div class="clrs-open-hours"></div> 30px
-            <div class="clrs-open-visits"></div>
-            <div class="clrs-open-resign"></div>
+            <div class="clrs-open-hours">
+                <div class="clrs-open-title">Salon jest czynny</div>
+                <div class="clrs-open-text">od poniedziałku do piątku w godzinach:</div>
+                <div class="clrs-open-accent">10:00 - 18:00</div>
+                
+                </div>
+            <div class="clrs-open-visits">
+
+                 <div class="clrs-open-title">Termin wizyty</div>
+                <div class="clrs-open-text">proszę uzgodnić telefonicznie pod nr:</div>
+                <div class="clrs-open-accent">506 961 485</div>
+
+
+            </div>
+            <div class="clrs-open-resign">Proszę także o informacje o ewnetualnej rezygnacji z wizyty. Możliwa jest też rezerwacja wizyty poza godzinami otwarcia salonu.</div>
         </section>
-        <div class="clrs-separator--dog1">do1</div>
+         <div class="clrs-separator">
+        <div class="clrs-separator--left"></div>
+            <img class="clrs-separator-image" src="./images/clrs_dog2.png" />
+            
+        <div class="clrs-separator--right"></div>
+        </div>
         <section class="clrs-address">
-            <div class="clrs-address-text"></div>
-            <div class="clrs-address-map"></div>
+            <div class="clrs-address-text">
+                <div class="clrs-address-title">
+                    Tu jesteśmy
+                </div>
+                <div class="clrs-address-text">
+                    Powiśle 13A <br/>
+                    09-408 Płock
+                </div>
+                <div class="clrs-address-accent">
+                    <strong>Salon pielęgnacji psów - Clarus</strong> <br />
+                    Magdalena Bujalska<br/>
+                    NIP: 7743063119
+                </div>
+
+
+            </div>
+            <div class="clrs-address-map" id="map"></div>
         </section>
 
     </main>
@@ -61,6 +102,7 @@
             Copyright © 2017, Salon pielęgnacji Psów Clarus, All rights reserved.
         </div>
     </footer>-->
+
 </body>
 
 </html>
