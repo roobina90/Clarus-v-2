@@ -8,23 +8,35 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style/modules.css">
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAn5BnID9euROFjJbKua2g_9CdoOeaUebs"></script>
      <script src="./scripts/script.js"></script>
 
 </head>
 
 <body>
+    <div class="clrs-loadingLayer">
+        <div class="clrs-loadingLayer-ring">
+            <div class="clrs-loadingLayer-logo">
+            </div>
+        </div>
 
+    </div>
     <nav class="clrs-header">
-        <div class="clrs-header-menu">
+                    <a href="/" class="clrs-header-logo--mobile" ><img src="images/clrs_logo.png" /></a>
+        <div class="clrs-header-menu" id="mobileMenu">
             <a href="http://google.pl" class="clrs-link">Strona główna</a>
             <a href="http://google.pl" class="clrs-link">Cennik</a>
             <a href="http://google.pl" class="clrs-link">oferta</a>
-            <a href="/" class="clrs-header-logo"><img src="images/clrs_logo.png" /></a>
+            <a href="/" class="clrs-header-logo" ><img src="images/clrs_logo.png" /></a>
             <a href="http://google.pl" class="clrs-link">przed wizytą</a>
             <a href="http://google.pl" class="clrs-link">poradnik</a>
             <a href="http://google.pl" class="clrs-link">kontakt</a>
+        </div>
+        <div class="clrs-header-mobile" id="mobileBurger">
+            <div class="clrs-header-mobile-bar"></div>
+            <div class="clrs-header-mobile-bar"></div>
+            <div class="clrs-header-mobile-bar"></div>
         </div>
     </nav>
     <main class="clrs-main">

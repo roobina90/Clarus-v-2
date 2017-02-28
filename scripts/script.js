@@ -222,3 +222,22 @@ function init() {
     google.maps.event.trigger(map, 'resize');
   });
 }
+
+
+
+
+$(function () {
+    $("#mobileBurger").click(function () {
+       $("#mobileMenu").toggleClass("is-active");
+    })
+})
+
+
+$(window).on('load', function (e) {
+    setTimeout(function () {
+        $(".clrs-loadingLayer").fadeOut(400);
+        $(".clrs-mainContainer").fadeIn(1400, function() {
+        init();
+    });
+    }, 1500); 
+})

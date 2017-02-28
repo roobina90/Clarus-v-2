@@ -21,6 +21,9 @@
             line-height: @headerHeight;
             text-transform: uppercase;
             vertical-align: middle;
+                @media (max-width: @md) {
+            margin: 0 10px;
+    }
     &:after {
         position: absolute;
 	top: 100%;
@@ -96,7 +99,9 @@
     }
     &-hours {
         .make-xs-column-offset(1);
-        .make-xs-column(5);
+        .make-xs-column(10);
+        .make-sm-column-offset(1);
+        .make-sm-column(5);
         
         margin-top: 40px;
         
@@ -104,8 +109,10 @@
     }
 
     &-visits {
-         .make-xs-column-offset(1);
-        .make-xs-column(5);
+          .make-xs-column-offset(1);
+        .make-xs-column(10);
+         .make-sm-column-offset(1);
+        .make-sm-column(5);
         margin-top: 40px;
         
         margin-bottom: 40px;
@@ -185,6 +192,10 @@
         line-height: 78px;
         letter-spacing: -1px;
         color: @accentColor;
+         @media (max-width: @sm) {
+             font-size: 40px;
+             line-height: 45px;
+         }
     }
 
     &-text {
