@@ -12,11 +12,11 @@ body {
       background-image: url("../images/clrs_back.png");
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: left center;
+    background-position: left top;
 }
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 .clrs-main {
@@ -44,19 +44,6 @@ body {
         margin: 0 auto;
         width: 1200px;
         text-align: center;
-        &-item {
-            padding: 10px 25px 5px 25px;
-            line-height: @headerHeight;
-            vertical-align: middle;
-            &:link, &:visited {
-                color: @textColor;
-            }
-            &:hover, &:active {
-                text-decoration: none;
-                color: @accentColor;
-                border-bottom: 1px solid @accentColor;
-            }
-        }
 
     }
     &-logo {
@@ -74,22 +61,6 @@ body {
         margin: 0 auto;
         width: 1200px;
         text-align: center;
-       &-item {
-            font-family: "Playfair Display";
-            font-weight: bold;
-            padding: 10px 25px 5px 25px;
-            line-height: @headerHeight;
-            text-transform: uppercase;
-            vertical-align: middle;
-            &:link, &:visited {
-                color: @textColor;
-            }
-            &:hover, &:active {
-                text-decoration: none;
-                color: @accentColor;
-                border-bottom: 1px solid @accentColor;
-            }
-        }
     }
     &-claim {
         text-align: center;
