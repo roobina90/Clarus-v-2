@@ -75,13 +75,12 @@ body {
     }
 
      @media (max-width: @sm) {
-        height: auto;
         position: relative;
         top: @headerHeight;
         background: @backgroundColor;
-        height: 0;
+        height: 0; 
         overflow: hidden;
-                        transition: all 0.2s ease-in-out;
+        border-bottom: 1px solid @textColor;
     }
 
     &.is-active {

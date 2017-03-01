@@ -228,7 +228,7 @@ function init() {
 
 $(function () {
     $("#mobileBurger").click(function () {
-       $("#mobileMenu").toggleClass("is-active");
+       $("#mobileMenu").toggleClass("is-active", 400);
     })
 })
 
