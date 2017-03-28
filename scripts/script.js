@@ -225,6 +225,14 @@ function init() {
 
 
 
+$(function () {
+    $(".clrs-facebook").one("mouseover", function () {
+        $(this).addClass("clrs-noAnimation");
+    })
+})
+
+
+
 
 $(function () {
     $("#mobileBurger").click(function () {

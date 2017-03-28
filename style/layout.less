@@ -23,9 +23,8 @@ body {
     .container-fluid();
     width: 1200px;
     max-width: 1920px;
-    margin: 0 auto;
     display: block;
-    margin: @headerHeight auto 0 auto;
+    margin: @headerHeight + 50px auto 0 auto;
     @media (max-width: @md) {
         width: 100%;
     }
@@ -222,4 +221,23 @@ position: absolute;
         margin-top: 40vh;
       -webkit-transition: all linear 1.5s;
       transition: all linear 1.5s;
+}
+
+a {
+    color: @accentColor;
+    text-decoration: underline;
+
+    &:hover, &:focus, &:active {
+         color: @accentColor;
+         text-decoration: none;
+    }
+}
+
+em {
+    color: @accentColor;
+    font-style: normal;
+}
+
+.clrs-clear {
+    clear: both;
 }
